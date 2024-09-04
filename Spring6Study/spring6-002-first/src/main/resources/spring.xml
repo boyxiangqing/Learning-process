@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--这就是Spring的配置文件-->
+    <!--IDEA工具为我们提供了这个文件的模板，一定要使用这个模板来创建-->
+    <!--这个文件名不一定要叫spring.xml,也可以是其他名字 -->
+    <!--这个文件最好是放在类路径当中，方便后期的移植-->
+    <!--放在resource根目录下，就相当于是放到了类的根路径下。 -->
+    <!--
+        bean标签的两个重要属性：
+        id：是这个bean的身份证号，不能重复，是唯一标识。
+        class：必须填写类的全路径，全限定类名。（带包名的类名）
+    -->
+    <bean id="userBean" class="com.xiang.spring6.bean.User"/>
+
+
+</beans>
